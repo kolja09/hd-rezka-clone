@@ -24,7 +24,6 @@ export const PageLayout = () => {
 
   return (
     <div className={styles.pageLayoutWrapper}>
-      <div className={styles.bgImage}></div>
       <div className={styles.sideBoxWrapper}>
         <img src={sideLogo} alt="side logo image" className={styles.sideLogo} />
         <img src={sideCall} alt="side call image" className={styles.sideCall} />

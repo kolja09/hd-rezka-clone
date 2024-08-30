@@ -32,17 +32,14 @@ export const Header = () => {
         </div>
       </div>
       <Link to="/" className={styles.logo}></Link>
-      <div>
-        <ChangeTheme />
-
-        <div className={styles.authorizationContainer}>
-          <div className={styles.signIn}>
-            <span className={styles.authorizationText}>ВХОД</span>
-            <img src={signIn} alt="Sign In" />
-          </div>
-          <div className={styles.signUp}>
-            <span className={styles.authorizationText}>РЕГИСТРАЦИЯ</span>
-          </div>
+      <div className={styles.authorizationContainer}>
+        <div className={styles.signIn}>
+          <span className={styles.authorizationText}>ВХОД</span>
+          <img src={signIn} alt="Sign In" />
+        </div>
+        <div className={styles.signUp}>
+          <span className={styles.authorizationText}>РЕГИСТРАЦИЯ</span>
+          <ChangeTheme />
         </div>
       </div>
     </header>

@@ -1,6 +1,10 @@
 import { useCallback } from "react";
 import classNames from "classnames";
 
+// icons
+import moon from "../../../assets/moon.svg";
+import sun from "../../../assets/sun.svg";
+
 // styles
 import styles from "./Toggler.module.css";
 
@@ -10,7 +14,6 @@ type Props = {
   callback: () => Promise<void> | void;
   size?: "default";
   isDisabled?: boolean;
-  color?: "default";
 };
 
 export const Toggler = (props: Props) => {
@@ -18,7 +21,6 @@ export const Toggler = (props: Props) => {
     isChecked = false,
     isDisabled = false,
     size = "default",
-    color = "default",
     name,
     callback,
   } = props;
@@ -29,6 +31,8 @@ export const Toggler = (props: Props) => {
 
   return (
     <div className={styles.toggler}>
+      <img alt="moon" src={moon} className={styles.iconMoon} />
+      <img alt="sun" src={sun} className={styles.iconSun} />
       <input
         className={classNames(styles.toggleInput, {
           [styles.checked]: isChecked,
@@ -44,7 +48,6 @@ export const Toggler = (props: Props) => {
           [styles.checked]: isChecked,
           [styles.disabled]: isDisabled,
           [styles.defaultSize]: size === "default",
-          [styles.defaultColor]: color === "default",
         })}
         htmlFor={name}
       >
