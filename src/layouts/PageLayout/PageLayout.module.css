@@ -31,19 +31,14 @@
   height: 100vh;
   width: 100%;
   max-width: 385px;
-
-  @media screen and (max-width: 1440px) {
-    display: none;
-  }
 }
 
 .pageContainer {
   position: relative;
 
-  background: white;
+  background-color: var(--color-theme);
 
   width: 100%;
-  height: 1000px;
 }
 
 .sideLogo {
@@ -143,4 +138,35 @@
   top: 5px;
 
   cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .pageContentWrapper {
+    min-width: auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .sideBoxWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgImage {
+    display: none;
+  }
+
+  .bottomAdWrapper,
+  .topAdWrapper {
+    display: none;
+  }
+
+  .header {
+    padding: 0 16px;
+  }
+
+  .authorizationContainer {
+    gap: 16px;
+  }
 }
