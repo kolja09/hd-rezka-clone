@@ -1,7 +1,7 @@
 import { combineReducers } from "@reduxjs/toolkit";
 
-import homeReducer from "./home/home.slice";
+import categoriesReducer from "./categories/categories.slice";
 
 export const reducers = combineReducers({
-  home: homeReducer,
+  categories: categoriesReducer,
 });

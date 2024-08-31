@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-import { Footer, Header } from "../../components/shared";
+import { Footer, Header, Navbar } from "../../components/shared";
 
 import sideLogo from "../../assets/side-logo.png";
 import sideCall from "../../assets/side-call.png";
@@ -45,6 +45,7 @@ export const PageLayout = () => {
         </div>
         <div className={styles.pageContainer}>
           <Header />
+          <Navbar />
           <Outlet />
           <Footer />
         </div>
