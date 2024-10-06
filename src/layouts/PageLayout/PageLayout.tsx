@@ -1,21 +1,29 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-import { Footer, Header, Navbar } from "../../components/shared";
+// store
+import { useAppSelector } from "src/store/hooks";
 
-import sideLogo from "../../assets/side-logo.png";
-import sideCall from "../../assets/side-call.png";
-import sideBtn from "../../assets/side-btn.png";
-import rightElem from "../../assets/right-elem.png";
-import leftElem from "../../assets/left-elem.png";
-import headerCall from "../../assets/header-call.png";
-import headerMan from "../../assets/header-man.png";
-import sideCallBottom from "../../assets/side-call-bottom.png";
-import closeBanner from "../../assets/closeBanner.svg";
+// shared components
+import { Footer, Header, LoginModal, Navbar } from "src/components/shared";
 
+// assets
+import sideLogo from "src/assets/side-logo.png";
+import sideCall from "src/assets/side-call.png";
+import sideBtn from "src/assets/side-btn.png";
+import rightElem from "src/assets/right-elem.png";
+import leftElem from "src/assets/left-elem.png";
+import headerCall from "src/assets/header-call.png";
+import headerMan from "src/assets/header-man.png";
+import sideCallBottom from "src/assets/side-call-bottom.png";
+import closeBanner from "src/assets/closeBanner.svg";
+
+// styles
 import styles from "./PageLayout.module.css";
 
 export const PageLayout = () => {
+  const { isOpenLoginModal } = useAppSelector((state) => state.auth);
+
   const [isOpenBanner, setIsOpenBanner] = useState(true);
 
   const handleCloseBanner = () => {
@@ -79,6 +87,7 @@ export const PageLayout = () => {
         <img src={sideBtn} alt="side button image" className={styles.sideBtn} />
         <img src={rightElem} alt="side element" className={styles.rightElem} />
       </div>
+      {isOpenLoginModal && <LoginModal />}
     </div>
   );
 };

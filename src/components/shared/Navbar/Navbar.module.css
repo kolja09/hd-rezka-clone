@@ -9,12 +9,6 @@
   padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .navbarCustom {
-    padding: 0 16px;
-  }
-}
-
 .navbarToggle {
   display: none;
   flex-direction: column;
@@ -105,14 +99,16 @@
 }
 
 .navbarSearch {
-  display: flex;
-  align-items: center;
-  background: #fff;
   position: absolute;
   right: 0px;
-  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+
   max-width: 258px;
   width: 100%;
+
+  transition: all 0.3s ease;
 }
 
 .navbarSearchInput {
@@ -161,4 +157,10 @@
 
 .navbarSearchResultsActive {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .navbarCustom {
+    padding: 0 16px;
+  }
 }

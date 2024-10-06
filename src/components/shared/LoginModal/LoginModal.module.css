@@ -1,0 +1,30 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px 0;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  padding-top: 14px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.modalFooter {
+  color: #777;
+  font-size: 14px;
+}
+
+.registerText {
+  color: #00a0b0;
+}
+
+.registerText:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider as ReduxProvider } from "react-redux";
 
+import { Support } from "./pages/Support/Support";
 import { store } from "./store/store";
 
-import { Actor, Home, Movie, Movies } from "./pages";
 import { ThemeProvider } from "./providers";
 import { PageLayout } from "./layouts";
+import { Actor, Home, Movie, Movies } from "./pages";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
               <Route path="/films" element={<Movies />} />
               <Route path="/films/:id" element={<Movie />} />
               <Route path="/actor" element={<Actor />} />
+              <Route path="/support" element={<Support />} />
             </Route>
           </Routes>
         </BrowserRouter>

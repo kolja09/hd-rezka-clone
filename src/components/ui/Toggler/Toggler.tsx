@@ -2,8 +2,8 @@ import { useCallback } from "react";
 import classNames from "classnames";
 
 // icons
-import moon from "../../../assets/moon.svg";
-import sun from "../../../assets/sun.svg";
+import moon from "src/assets/moon.svg";
+import sun from "src/assets/sun.svg";
 
 // styles
 import styles from "./Toggler.module.css";

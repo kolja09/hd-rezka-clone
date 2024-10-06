@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import search from "../../../assets/search.svg";
 import dropDownArrow from "../../../assets/drop-down-arrow.svg";
@@ -7,7 +8,6 @@ import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 
 import styles from "./Navbar.module.css";
 import { getCategoriesThunk } from "../../../store/slices/categories/categories.thunk";
-import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const dispatch = useAppDispatch();
@@ -54,8 +54,6 @@ export const Navbar = () => {
   useEffect(() => {
     dispatch(getCategoriesThunk({}));
   }, []);
-
-  console.log(categories, "categories");
 
   return (
     <nav className={styles.navbarCustom}>

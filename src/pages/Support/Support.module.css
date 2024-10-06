@@ -1,0 +1,19 @@
+.form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+.buttonStyles {
+  max-width: 220px;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonStyles {
+    max-width: 100%;
+  }
+}

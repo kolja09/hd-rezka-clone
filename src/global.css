@@ -1,7 +1,8 @@
 :root {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  font-weight: 400;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,18 +14,28 @@
 
   --dark-color: #000000;
 
-  --text-color-light: #000000;
-  --text-color-dark: #ffffff;
+  --text-color-light: #ffffff;
+  --text-color-dark: #000000;
 }
 
 [data-theme="light"] {
   --color-theme: var(--color-theme-light);
-  --text-color: var(--text-color-light);
+  --text-color: var(--text-color-dark);
+
+  --text-label: #555555;
+
+  --body-field: #f9f9f9;
+  --border-field: #e3e3e3;
 }
 
 [data-theme="dark"] {
   --color-theme: var(--color-theme-dark);
-  --text-color: var(--text-color-dark);
+  --text-color: var(--text-color-light);
+
+  --text-label: #ffffff80;
+
+  --body-field: #060f13;
+  --border-field: rgba(255, 255, 255, 0.22);
 }
 
 * {
@@ -38,4 +49,18 @@ body {
   overflow-y: auto;
 
   background-color: #000;
+
+  color: var(--text-color);
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
 }

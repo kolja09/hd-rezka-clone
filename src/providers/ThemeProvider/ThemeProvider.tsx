@@ -2,10 +2,10 @@ import React, { useLayoutEffect, useMemo, useState } from "react";
 import Cookie from "js-cookie";
 
 // consts
-import { DARK_THEME, LIGHT_THEME } from "../../common/consts/theme.const";
+import { DARK_THEME, LIGHT_THEME } from "src/common/consts/theme.const";
 
 // types
-import { ThemeColorType } from "../../common/types/theme.types";
+import { ThemeColorType } from "src/common/types/theme.types";
 
 const ThemeContext = React.createContext<{
   theme: string;

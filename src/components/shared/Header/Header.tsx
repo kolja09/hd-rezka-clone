@@ -1,18 +1,28 @@
 import { Link } from "react-router-dom";
 
-// icons
-import twitter from "../../../assets/twitter.svg";
-import telegram from "../../../assets/telegram.svg";
-import subscribe from "../../../assets/subscribe.svg";
-import signIn from "../../../assets/sign-in.svg";
+// store
+import { useAppDispatch } from "src/store/hooks";
+import { setIsOpenLoginModal } from "src/store/slices/auth/auth.slice";
 
-// components
-import { ChangeTheme } from "../ChangeTheme/ChangeTheme";
+// icons
+import twitter from "src/assets/twitter.svg";
+import telegram from "src/assets/telegram.svg";
+import subscribe from "src/assets/subscribe.svg";
+import signIn from "src/assets/sign-in.svg";
+
+// shared components
+import { ChangeTheme } from "src/components/shared";
 
 // styles
 import styles from "./Header.module.css";
 
 export const Header = () => {
+  const dispatch = useAppDispatch();
+
+  const handleOpenLoginModal = () => {
+    dispatch(setIsOpenLoginModal(true));
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.dropdownContainer}>
@@ -33,7 +43,7 @@ export const Header = () => {
       </div>
       <Link to="/" className={styles.logo}></Link>
       <div className={styles.authorizationContainer}>
-        <div className={styles.signIn}>
+        <div onClick={handleOpenLoginModal} className={styles.signIn}>
           <span className={styles.authorizationText}>ВХОД</span>
           <img src={signIn} alt="Sign In" />
         </div>

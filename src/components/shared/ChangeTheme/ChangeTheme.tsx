@@ -1,13 +1,13 @@
 import { useContext, useCallback, useMemo, useState, useEffect } from "react";
 
-// context
-import ThemeContext from "../../../providers/ThemeProvider/ThemeProvider";
+// providers
+import ThemeContext from "src/providers/ThemeProvider/ThemeProvider";
 
-// ui
-import { Toggler } from "../../ui";
+// ui components
+import { Toggler } from "src/components/ui";
 
 // consts
-import { DARK_THEME, LIGHT_THEME } from "../../../common/consts/theme.const";
+import { DARK_THEME, LIGHT_THEME } from "src/common/consts/theme.const";
 
 // styles
 import styles from "./ChangeTheme.module.css";

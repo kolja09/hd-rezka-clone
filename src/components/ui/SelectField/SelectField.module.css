@@ -1,0 +1,169 @@
+.selectField {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+
+  color: var(--text-label);
+
+  padding-bottom: 7px;
+}
+
+.required {
+  color: #ff3b30;
+  margin-left: 4px;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.9px;
+}
+
+.selectWrapper {
+  background: var(--body-field);
+  border: 1px solid var(--border-field);
+
+  padding: 15px 10px;
+  width: 100%;
+  height: 45px;
+
+  color: var(--text-color);
+
+  font-size: 12px;
+  height: 44.5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: inset 0 0 1px rgba(136, 136, 136, 0.85), 0 0 6px #52a8ec;
+    transition: all 0.2s;
+  }
+}
+
+.errorBorder {
+  border-color: #dc2727cc;
+}
+
+.selectedValue {
+  flex: 1;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+
+  color: var(--text-color);
+}
+
+.arrow {
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.optionsWrapper {
+  box-shadow: 0px 2px 4px 0px #00000012;
+  background: var(--body-field);
+  border: 1px solid var(--border-field);
+  border-radius: 6px;
+
+  position: absolute;
+  top: 104%;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.option {
+  background: var(--body-field);
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.option.active {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  cursor: default;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.activeBorder {
+  box-shadow: inset 0 0 1px rgba(136, 136, 136, 0.85), 0 0 6px #52a8ec;
+  transition: all 0.2s;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  margin-top: 5px;
+  color: #dc2727cc;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.mobileModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-height: 50%;
+  background: var(--body-field);
+  border-radius: 6px;
+  border: 3px solid var(--border-field);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .optionsWrapper {
+    display: none;
+  }
+
+  .mobileModal {
+    display: block;
+  }
+
+  .option {
+    padding: 12px;
+  }
+}
+
+[data-theme="dark"] {
+  .option.active {
+    color: black;
+  }
+
+  .option:hover {
+    color: black;
+  }
+}
