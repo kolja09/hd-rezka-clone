@@ -1,0 +1,88 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 155px;
+}
+
+.logoBestFilms:hover {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.logoBestFilms:hover .small {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.logoBestFilms {
+  width: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+}
+
+.logoBestFilms span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  color: black;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 24px;
+  padding: 10px 0;
+  width: 50%;
+}
+
+.logoLink:hover {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.logoImg {
+  opacity: 0.5;
+
+  width: auto;
+  height: auto;
+}
+
+.logoLink:hover .logoImg {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .logoBestFilms {
+    width: 100%;
+  }
+
+  .logos {
+    width: 100%;
+  }
+
+  .logoLink {
+    width: 50%;
+  }
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "title": "Радости рыбалки",
+    "type": "Tsuritama, аниме",
+    "year": 2012,
+    "rating": 6.53,
+    "numberOfVotes": 2936
+  },
+  {
+    "id": 2,
+    "title": "История одержимости: Кукла Ёцуги",
+    "type": "Tsukimonogatari, аниме",
+    "year": 2014,
+    "rating": 7.38,
+    "numberOfVotes": 2933
+  },
+  {
+    "id": 3,
+    "title": "Коп",
+    "type": "Tschugger, сериал",
+    "year": "2021 - ...",
+    "rating": null
+  },
+  {
+    "id": 4,
+    "title": "Цоци",
+    "type": "Tsotsi",
+    "year": 2005,
+    "rating": 6.87
+  },
+  {
+    "id": 5,
+    "title": "Лунное путешествие приведёт к новому миру [ТВ-1]",
+    "type": "Tsuki ga Michibiku Isekai Douchuu / Tsukimichi - Moonlit Fantasy, аниме",
+    "year": 2021,
+    "rating": 2.44,
+    "numberOfVotes": 24936
+  },
+  {
+    "id": 6,
+    "title": "Побег из Шоушенка",
+    "type": "Драма",
+    "year": 1994,
+    "rating": 9.3,
+    "numberOfVotes": 2400000
+  },
+  {
+    "id": 7,
+    "title": "Властелин колец: Возвращение короля",
+    "type": "Фэнтези",
+    "year": 2003,
+    "rating": 8.9,
+    "numberOfVotes": 1700000
+  },
+  {
+    "id": 8,
+    "title": "Темный рыцарь",
+    "type": "Экшн",
+    "year": 2008,
+    "rating": 9.0,
+    "numberOfVotes": 2500000
+  },
+  {
+    "id": 9,
+    "title": "Интерстеллар",
+    "type": "Научная фантастика",
+    "year": 2014,
+    "rating": 8.6,
+    "numberOfVotes": 1500000
+  },
+  {
+    "id": 10,
+    "title": "Начало",
+    "type": "Фантастика",
+    "year": 2010,
+    "rating": 8.8,
+    "numberOfVotes": 2100000
+  },
+  {
+    "id": 11,
+    "title": "Матрица",
+    "type": "Фантастика",
+    "year": 1999,
+    "rating": 8.7,
+    "numberOfVotes": 1700000
+  },
+  {
+    "id": 12,
+    "title": "Форрест Гамп",
+    "type": "Драма",
+    "year": 1994,
+    "rating": 8.8,
+    "numberOfVotes": 1800000
+  },
+  {
+    "id": 13,
+    "title": "Гладиатор",
+    "type": "Исторический",
+    "year": 2000,
+    "rating": 8.5,
+    "numberOfVotes": 1300000
+  },
+  {
+    "id": 14,
+    "title": "Омерзительная восьмерка",
+    "type": "Вестерн",
+    "year": 2015,
+    "rating": 7.8,
+    "numberOfVotes": 580000
+  },
+  {
+    "id": 15,
+    "title": "Безумный Макс: Дорога ярости",
+    "type": "Экшн",
+    "year": 2015,
+    "rating": 8.1,
+    "numberOfVotes": 930000
+  },
+  {
+    "id": 16,
+    "title": "Бойцовский клуб",
+    "type": "Драма",
+    "year": 1999,
+    "rating": 8.8,
+    "numberOfVotes": 1700000
+  },
+  {
+    "id": 17,
+    "title": "Зеленая миля",
+    "type": "Драма",
+    "year": 1999,
+    "rating": 8.6,
+    "numberOfVotes": 1200000
+  },
+  {
+    "id": 18,
+    "title": "Джанго освобожденный",
+    "type": "Вестерн",
+    "year": 2012,
+    "rating": 8.4,
+    "numberOfVotes": 1400000
+  },
+  {
+    "id": 19,
+    "title": "Криминальное чтиво",
+    "type": "Криминал",
+    "year": 1994,
+    "rating": 8.9,
+    "numberOfVotes": 1900000
+  },
+  {
+    "id": 20,
+    "title": "Чужой",
+    "type": "Ужасы",
+    "year": 1979,
+    "rating": 8.4,
+    "numberOfVotes": 850000
+  }
+]

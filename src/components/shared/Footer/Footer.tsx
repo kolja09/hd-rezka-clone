@@ -7,7 +7,7 @@ import twiterWhite from "../../../assets/twiter-white.svg";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
-  const { categories } = useAppSelector((state) => state.categories);
+  const { categories } = useAppSelector((state) => state.home);
 
   return (
     <footer className={styles.footer}>
@@ -32,7 +32,11 @@ export const Footer = () => {
       </div>
       <div className={styles.contactInfo}>
         <p>© 2024 HDrezka.me</p>
-        <img className={styles.twitterImage} src={twiterWhite} alt="twiter white" />
+        <img
+          className={styles.twitterImage}
+          src={twiterWhite}
+          alt="twiter white"
+        />
       </div>
     </footer>
   );

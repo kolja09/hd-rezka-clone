@@ -161,7 +161,11 @@
   }
 
   .dropdownContent {
-    background: #060f13;
+    background: #222d33;
+  }
+
+  .dropdownContent::before {
+    border-color: transparent transparent #222d33 transparent;
   }
 
   .dropdownContent a {
@@ -169,6 +173,6 @@
   }
 
   .dropdownContent a:hover {
-    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
